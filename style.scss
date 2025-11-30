@@ -33,7 +33,7 @@ body {
 
   .box {
     max-width: 350px;
-    border: 5px solid #c8c6c6;
+    border: 0px solid #c8c6c610;
     color: whitesmoke;
     display: flex;
     align-items: center;
@@ -44,12 +44,7 @@ body {
     padding: 10px;
     border-radius: 30px;
 
-    background: linear-gradient(
-          to right,
-          rgba(0, 0, 0, 0.066),
-          rgba(245, 245, 245, 0.566)
-        )
-        content-box,
+    background: linear-gradient(to right, rgb(0, 0, 0)) padding-box,
       conic-gradient(
           from var(--rotate),
           green,
@@ -57,10 +52,20 @@ body {
           rgb(23, 70, 104),
           green
         )
-        padding-box;
-    animation: rotate 10s infinite;
+        border-box;
+    animation: rotate 5s infinite;
+    animation-timing-function: linear;
+    animation-play-state: paused;
+    transition: all 0.3s linear;
+
     img {
       width: 100%;
+      border-radius: 10px;
     }
   }
+}
+
+.box:hover {
+  animation-play-state: running;
+  border: 10px solid transparent;
 }
