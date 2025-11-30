@@ -41,7 +41,7 @@ body .box {
   gap: 10px;
   padding: 10px;
   border-radius: 30px;
-  background: linear-gradient(to right, rgb(0, 0, 0)) padding-box, conic-gradient(from var(--rotate), rgb(48, 171, 48), rgb(123, 51, 11), rgb(48, 171, 48)) border-box;
+  background: linear-gradient(to right, rgb(0, 0, 0)) padding-box, conic-gradient(from var(--rotate), #1c7189, #f81a19, #1c7189) border-box;
   animation: rotate 5s infinite;
   animation-timing-function: linear;
   animation-play-state: paused;
@@ -55,7 +55,8 @@ body .box img {
 .box:hover {
   animation-play-state: running;
   border: 10px solid transparent;
-  box-shadow: 0 0 50px rgb(28, 134, 20);
-  text-shadow: 0 0 15px rgb(217, 12, 12);
-  color: rgb(133, 219, 133);
+  box-shadow: 0 0 50px #192023;
+  text-shadow: 0 0 15px #f81a19;
+  color: #9ea398;
+  font-weight: bolder;
 }/*# sourceMappingURL=style.css.map */
